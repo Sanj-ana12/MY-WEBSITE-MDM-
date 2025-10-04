@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - JewelAura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Helpline Section */
+        .helpline-info {
+            background-color: #fef6f5;
+            padding: 25px;
+            border-left: 6px solid #ff6f61;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        .helpline-info p {
+            margin: 12px 0;
+            font-size: 16px;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .helpline-info p span {
+            font-size: 20px;
+            color: #ff6f61;
+        }
+
+        /* Form Section */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        input, textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            padding: 15px;
+            background-color: #ff6f61;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #e65b50;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <!-- Customer Helpline Info -->
+        <div class="helpline-info">
+            <p><span>📞</span> <strong>Customer Helpline:</strong> +91 9876543210</p>
+            <p><span>✉️</span> <strong>Email:</strong> support@jewelaura.com</p>
+        </div>
+
+        <!-- Customer Query & Suggestion Form -->
+        <form>
+            <div>
+                <label for="customer-name">Your Name</label>
+                <input type="text" id="customer-name" name="customer-name" placeholder="Enter your name" required>
+            </div>
+
+            <div>
+                <label for="customer-email">Your Email</label>
+                <input type="email" id="customer-email" name="customer-email" placeholder="Enter your email" required>
+            </div>
+
+            <div>
+                <label for="customer-query">Your Query</label>
+                <textarea id="customer-query" name="customer-query" placeholder="Write your query here..." required></textarea>
+            </div>
+
+            <!-- Suggestion Box -->
+            <div>
+                <label for="customer-suggestion">Your Suggestions</label>
+                <textarea id="customer-suggestion" name="customer-suggestion" placeholder="We’d love to hear your feedback or suggestions..."></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

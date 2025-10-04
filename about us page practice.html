@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Shopping Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1591035897819-b5dcfcb3d4aa?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Company Story */
+        .about-text {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .about-text h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #ff6f61;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* Core Values / Features */
+        .features {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .feature-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            flex: 1 1 250px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .feature-card h3 {
+            color: #ff6f61;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>About Us</h1>
+    </div>
+
+    <div class="container">
+        <!-- Company Story -->
+        <div class="about-text">
+            <h2>Our Story</h2>
+            <p>
+                Welcome to ShopEase, your number one source for all things online shopping. 
+                We're dedicated to providing you the very best of products, with an emphasis on quality, customer service, and uniqueness.  
+                Founded in 2020, ShopEase has come a long way from its beginnings. When we first started out, our passion for making shopping easier for everyone drove us to do intense research and give customers the best experiences possible.
+            </p>
+        </div>
+
+        <!-- Core Values / Features -->
+        <div class="features">
+            <div class="feature-card">
+                <h3>Customer First</h3>
+                <p>We prioritize our customers and strive to provide the best shopping experience possible.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Quality Products</h3>
+                <p>Our products are carefully selected and tested for quality, ensuring satisfaction with every purchase.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Fast Delivery</h3>
+                <p>We make sure your orders reach you quickly and safely, anywhere in the country.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
